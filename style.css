@@ -54,10 +54,14 @@ body {
     color: #5A0E0E;
     letter-spacing: 0.4rem;
 }
+
 .heroimage img {
+    z-index: 3;
     max-width: 100%;
     width: 27rem;
     height: auto;
-    position: relative;
-    margin:-34rem 75rem 20rem 43rem;
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    transform: translate(-50%, -50%);
 }
