@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'primary-font';
+    src: url('assets/fonts/Minercraftory.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'secondary-font';
+    src: url('assets/fonts/RobotoCondensed-VariableFont_wght.ttf') format('truetype');
+}
+body {
+    margin: 0 auto;
+    max-width: 80%;
+    padding: 20px;
+    background-color: #F8F0EE;
+}
+
+.body{
+    margin-top: 2rem;
+    overflow-y: auto;
+}
+
+.content{
+    margin-top: 10%;
+    margin-bottom: 10rem;
+}
+
+.navbar{
+    text-align: right;
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin-right: 7rem;
+}
+
+.navbar li a {
+    color: #5A0E0E;
+    font-family: 'primary-font';
+    text-decoration: none;
+}
+
+.herotext{
+    font-family: 'secondary-font';
+    font-size: 2rem;
+    font-weight:400 ;
+}
+.intro {
+    font-family: 'primary-font';
+    font-size: 4rem;
+    color: #5A0E0E;
+    letter-spacing: 0.4rem;
+}
+.heroimage img {
+    max-width: 100%;
+    width: 27rem;
+    height: auto;
+    position: relative;
+    margin:-34rem 75rem 20rem 43rem;
+}
