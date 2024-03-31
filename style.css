@@ -77,11 +77,21 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.skills-head{
+.head{
     font-family: 'primary-font';
     color: #5A0E0E;
     font-size: 3rem;   
     position: absolute;
+    letter-spacing: 0.3rem;
+}
+.about-text{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    font-family: 'secondary-font';
+    font-size: 1.5rem;
+    position: relative;
+    width: 35rem;
+    line-height: 2.2rem;
 }
 .skills-img {
     display: flex;
