@@ -13,7 +13,7 @@ body {
     background-color: #F8F0EE;
 }
 
-.body{
+.hero-page{
     margin-top: 2rem;
     overflow-y: auto;
     justify-content: center;
@@ -75,4 +75,52 @@ body {
     top: 26%;
     right: 11%;
     transform: translate(-50%, -50%);
+}
+
+.skills-head{
+    font-family: 'primary-font';
+    color: #5A0E0E;
+    font-size: 3rem;   
+    position: absolute;
+}
+.skills-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skills-img img {
+    max-width: 100%;
+    width: 65rem;
+    height: auto;
+    position: relative;
+    margin-top: 9rem;
+    z-index: 6;
+}
+.skills-container {
+    border-style: solid;
+    z-index: 4;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    position: relative;
+    margin-top: -23rem;
+    left:24%;
+    transform: translate(-50%, -50%);
+    width: 25rem;
+}
+
+.skills-container li {
+    font-family: 'secondary-font';
+    font-size: 1.6rem;
+    list-style-type: none;
+    margin-bottom: 1.5rem;
+}
+
+#container2{
+    border-style: solid;
+    z-index: 4;
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    transform: translate(-50%, -50%);
+    width: 25rem;
 }
