@@ -16,6 +16,7 @@ body {
 .body{
     margin-top: 2rem;
     overflow-y: auto;
+    justify-content: center;
 }
 
 .content{
@@ -34,7 +35,7 @@ body {
 
 .navbar li {
     display: inline;
-    margin-right: 7rem;
+    margin-right: 6rem;
 }
 
 .navbar li a {
@@ -61,7 +62,17 @@ body {
     width: 27rem;
     height: auto;
     position: absolute;
-    top: 50%;
-    right: 3%;
+    top: 55%;
+    right: 0%;
+    transform: translate(-50%, -50%);
+}
+.hearts img{
+    z-index: 3;
+    max-width: 100%;
+    width: 13rem;
+    height: auto;
+    position: absolute;
+    top: 26%;
+    right: 11%;
     transform: translate(-50%, -50%);
 }
