@@ -189,7 +189,6 @@ body {
 }
 .footer {
     background-color: #EDA5B0;
-    height: 10rem;
     color: rgb(0, 0, 0);
     padding: 20px;
     position: relative;
@@ -199,6 +198,7 @@ body {
     font-family: 'secondary-font';
     font-size: 1rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 3rem;
@@ -206,25 +206,29 @@ body {
 }
 
 .footer h1 {
-    margin-right: 10rem;
+    margin-bottom: 2rem;
 }
 
-.footer ul {
+.socials, .gmail {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex; /* Add flex display */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.footer li {
-    display: inline;
+.socials li, .gmail li {
     margin-right: 2rem;
 }
+
 .link, .mail, .x, .linkedin, .github, .discord{
     max-width: 3rem;
 }
-.footer li a{
+.socials li a, .gmail li a {
     width:100%;
     height: auto;
 }
-
+.gmail h1{
+    font-weight: 350;
+}
