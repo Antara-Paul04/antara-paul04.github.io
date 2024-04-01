@@ -42,6 +42,11 @@ body {
     color: #5A0E0E;
     font-family: 'primary-font';
     text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.navbar li a:hover {
+    transform: translateY(-3px);
 }
 
 .herotext{
@@ -134,3 +139,92 @@ body {
     transform: translate(-50%, -50%);
     width: 25rem;
 }
+
+.projects-page {
+    text-align: center; /* Align content in the center */
+}
+
+.project-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mushroom-arrow {
+    margin-right: 2rem;
+    display: flex;
+    align-items: left;
+    margin-left: 4rem;
+    padding-top: 5rem;
+}
+.mushroom-arrow img {
+    max-width: 100%;
+    width: 8rem;
+    height: auto;
+    position: relative;
+    margin-top: 9rem;
+    z-index: 6;
+}
+
+.project-image {
+    margin-right: 3rem;
+    padding-top: 15rem;
+}
+
+.text {
+    margin-right: 4rem;
+    margin-top: 14rem;
+    text-align: left;
+    max-width: 30rem; 
+    font-family: 'secondary-font';
+    color: #5A0E0E;
+}
+.short-text{
+    font-weight: 350;
+    color: black;
+    font-size: 1.5rem;
+}
+#text2 .text{
+    text-align: right;
+}
+.footer {
+    background-color: #EDA5B0;
+    height: 10rem;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-family: 'secondary-font';
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.footer h1 {
+    margin-right: 10rem;
+}
+
+.footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Add flex display */
+}
+
+.footer li {
+    display: inline;
+    margin-right: 2rem;
+}
+.link, .mail, .x, .linkedin, .github, .discord{
+    max-width: 3rem;
+}
+.footer li a{
+    width:100%;
+    height: auto;
+}
+
