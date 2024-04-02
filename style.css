@@ -98,6 +98,11 @@ body {
     width: 35rem;
     line-height: 2.2rem;
 }
+.about-img{
+    position:absolute;
+    margin-top:-48rem ;
+    margin-left: 45%;
+}
 .skills-img {
     display: flex;
     justify-content: center;
@@ -141,7 +146,7 @@ body {
 }
 
 .projects-page {
-    text-align: center; /* Align content in the center */
+    text-align: center;
 }
 
 .project-container {
@@ -203,6 +208,7 @@ body {
     align-items: center;
     padding-top: 3rem;
     padding-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .footer h1 {
