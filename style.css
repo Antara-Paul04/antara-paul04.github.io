@@ -35,19 +35,21 @@ body {
 
 .navbar li {
     display: inline;
-    margin-right: 6rem;
+    margin-right: 5rem;
 }
 
 .navbar li a {
     color: #5A0E0E;
     font-family: 'primary-font';
     text-decoration: none;
-    transition: transform 0.3s ease;
+    position: relative;
+    transition: top 0.5s ease;
 }
 
 .navbar li a:hover {
-    transform: translateY(-3px);
+    top: -5px;
 }
+
 
 .herotext{
     font-family: 'secondary-font';
@@ -71,6 +73,7 @@ body {
     right: 0%;
     transform: translate(-50%, -50%);
 }
+
 .hearts img{
     z-index: 3;
     max-width: 100%;
