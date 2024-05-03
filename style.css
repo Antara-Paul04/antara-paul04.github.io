@@ -12,6 +12,27 @@ body {
     padding: 20px;
     background-color: #F8F0EE;
 }
+.empty-box{
+    height: 50px;
+}
+.view-resume-btn {
+    background-color: #5a0e0e00;
+    color: #5A0E0E;
+    border: none;
+    outline: 2px solid #5A0E0E;
+    padding: 20px 30px;
+    font-size: 2rem;
+    font-family: 'secondary-font';
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+
+.view-resume-btn:hover {
+    background-color: #5A0E0E;
+    color:white;
+}
 
 .hero-page{
     margin-top: 2rem;
