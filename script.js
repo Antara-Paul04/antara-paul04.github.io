@@ -1,10 +1,8 @@
 document.querySelectorAll('.nav-link').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
-
         const targetId = this.getAttribute('href').substring(1);
         const targetElement = document.getElementById(targetId);
-
         window.scrollTo({
             top: targetElement.offsetTop,
             behavior: 'smooth'
@@ -32,10 +30,15 @@ const projectSets = [
         "assets/images/Devfest Image 2.png",
         "assets/images/Devfest Image 3.png"
     ],
-    ["","",""]
+    ["", "", ""]
 ];
 
-const textBoxHeadContent = ['REBASE','DEVFEST KOLKATA 2023', ' '];
+const textBoxHeadContent = [
+    '<a href="https://www.rebase01.tech/" class="textbox-head">REBASE</a>',
+    '<a href="https://devfest.gdgkolkata.in/" class="textbox-head">DEVFEST KOLKATA 2023</a>',
+    ' '
+];
+
 const textBoxPContent = [
     'I designed this website as well as the branding for the hackathon as a part of the organizing team of Rebase. Took me a long long time T-T',
     'I designed this website as a part of the organizing team of Devfest Kolkata 2023.',
@@ -51,8 +54,8 @@ const expImageSrc = [
 let currentIndex = 0;
 
 function updateContent() {
-    textBoxHead.textContent = textBoxHeadContent[currentIndex];
-    textBoxP.textContent = textBoxPContent[currentIndex];
+    textBoxHead.innerHTML = textBoxHeadContent[currentIndex];
+    textBoxP.innerHTML = textBoxPContent[currentIndex];
     expImage.src = expImageSrc[currentIndex];
 
     const currentProjectSet = projectSets[currentIndex];
@@ -62,11 +65,11 @@ function updateContent() {
     });
 
     projectImagesContainer2.forEach((container, index) => {
-        container.querySelector('img').src = currentProjectSet[index+1];
+        container.querySelector('img').src = currentProjectSet[index + 1];
     });
 
     projectImagesContainer3.forEach((container, index) => {
-        container.querySelector('img').src = currentProjectSet[index+2];
+        container.querySelector('img').src = currentProjectSet[index + 2];
     });
 }
 
@@ -80,5 +83,4 @@ arrowRight.addEventListener('click', () => {
     updateContent();
 });
 
-// Initial content update
 updateContent();
