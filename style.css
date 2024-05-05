@@ -6,6 +6,10 @@
     font-family: 'secondary-font';
     src: url('assets/fonts/RobotoCondensed-VariableFont_wght.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'tertiary-font';
+    src: url('assets/fonts/VT323-Regular.ttf') format('truetype');
+}
 
 body {
     margin: 0 auto;
@@ -134,6 +138,7 @@ body {
     font-size: 3rem;   
     position: absolute;
     letter-spacing: 0.3rem;
+    z-index: 10;
 }
 .about-text{
     padding-top: 10rem;
@@ -191,36 +196,7 @@ body {
     width: 25rem;
 }
 
-.projects-page {
-    text-align: center;
-}
 
-.project-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.mushroom-arrow {
-    margin-right: 2rem;
-    display: flex;
-    align-items: left;
-    margin-left: 4rem;
-    padding-top: 5rem;
-}
-.mushroom-arrow img {
-    max-width: 100%;
-    width: 8rem;
-    height: auto;
-    position: relative;
-    margin-top: 9rem;
-    z-index: 6;
-}
-
-.project-image {
-    margin-right: 3rem;
-    padding-top: 15rem;
-}
 
 .text {
     margin-right: 4rem;
@@ -238,6 +214,79 @@ body {
 #text2 .text{
     text-align: right;
 }
+
+.arrow {
+    margin-top: 50%;
+    width: calc(90% - 40px);
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    overflow-x: hidden;
+}
+.arrow-r, .arrow-l{
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.arrow img {
+    max-width: 100%;
+    width: 3rem;
+}
+
+
+.textbox {
+    position: relative;
+    height: 10rem;
+    width: 70rem;
+    background-color: #EDA5B0;
+    outline: 3px solid black;
+    margin-top: 50%;
+    margin-bottom: 10rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.textbox-head, .textbox-p {
+    text-align: left;
+    margin-left: 3rem;
+}
+
+.textbox-head {
+    font-family: 'primary-font';
+    color: #5A0E0E;
+    margin-top: 7%;
+    margin-bottom: -1.5rem;
+}
+
+.textbox-p {
+    font-family: 'tertiary-font';
+    font-size: 1.5rem;
+    margin-bottom: 5rem;
+    letter-spacing: 0.1rem;
+    font-weight: 100;
+}
+.exp {
+    position: relative;
+    display: inline-block;
+}
+
+.exp img {
+    max-width: 100%;
+    width: 15rem;
+    position: absolute;
+    top: 73%;
+    right: -14%;
+    transform: translateY(-50%);
+    z-index: 3;
+}
+  
 .footer {
     background-color: #EDA5B0;
     color: rgb(0, 0, 0);
