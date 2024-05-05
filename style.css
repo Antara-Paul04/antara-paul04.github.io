@@ -215,30 +215,6 @@ body {
     text-align: right;
 }
 
-.arrow {
-    margin-top: 50%;
-    width: calc(90% - 40px);
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    top: 50%;
-    left: 8%;
-    transform: translateY(-50%);
-    overflow-x: hidden;
-}
-.arrow-r, .arrow-l{
-    background: transparent;
-    border: none;
-    outline: none;
-    cursor: pointer;
-}
-.arrow img {
-    max-width: 100%;
-    width: 3rem;
-}
-
-
 .textbox {
     position: relative;
     height: 10rem;
@@ -273,6 +249,64 @@ body {
     letter-spacing: 0.1rem;
     font-weight: 100;
 }
+.project-images-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 13%;
+    margin-bottom: 1rem;
+    margin-left: 5.5%;
+}
+
+.project-img1,
+.project-img2,
+.project-img3 {
+    margin: 0.3rem;
+    width: 22rem;
+}
+
+.project-img1 img,
+.project-img2 img,
+.project-img3 img {
+    max-width: 100%;
+}
+
+.arrow {
+    margin-top: 47%;
+    width: calc(90% - 60px);
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    overflow-x: hidden;
+    align-items: center;
+}
+.arrow-r, .arrow-l{
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.arrow img {
+    max-width: 100%;
+    width: 3rem;
+}
+
+.arrow button {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.arrow img {
+    max-width: 100%;
+}
+
 .exp {
     position: relative;
     display: inline-block;
