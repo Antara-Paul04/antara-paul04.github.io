@@ -339,7 +339,66 @@ body {
     animation: rotate 1s infinite;
 }
 
-  
+.dribbble-img{
+    position: absolute;
+    margin-top: 13%;
+    margin-left: 6%;
+    width: 6rem;
+}
+.speech-d{
+    position: absolute;
+    margin-top: 13%;
+    margin-left: 15%;
+}
+.speech-d img{
+    width: 22rem;
+    max-width: 100%;
+}
+.behance-img{
+    position: absolute;
+    margin-top: 13%;
+    margin-left: 45%;
+    width: 6rem;
+}
+.speech-b{
+    position: absolute;
+    margin-top: 13%;
+    margin-left: 54%;
+}
+.speech-b img{
+    width: 22rem;
+    max-width: 100%;
+}
+.github-img{
+    position: absolute;
+    margin-top: 23%;
+    margin-left: 6%;
+    width: 6rem;
+}
+.speech-g{
+    position: absolute;
+    margin-top: 23%;
+    margin-left: 15%;
+}
+.speech-g img{
+    width: 22rem;
+    max-width: 100%;
+}
+.speech-d h1,
+.speech-b h1,
+.speech-g h1 {
+    font-family: 'tertiary-font';
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    position: absolute;
+    top: 20%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    white-space: nowrap;
+}
+
 .footer {
     background-color: #EDA5B0;
     color: rgb(0, 0, 0);

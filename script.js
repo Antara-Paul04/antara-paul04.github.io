@@ -1,15 +1,3 @@
-document.querySelectorAll('.nav-link').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href').substring(1);
-        const targetElement = document.getElementById(targetId);
-        window.scrollTo({
-            top: targetElement.offsetTop,
-            behavior: 'smooth'
-        });
-    });
-});
-
 const arrowLeft = document.querySelector('.arrow-l');
 const arrowRight = document.querySelector('.arrow-r');
 const projectImagesContainer1 = document.querySelectorAll(".project-img1");
@@ -18,6 +6,7 @@ const projectImagesContainer3 = document.querySelectorAll(".project-img3");
 const textBoxHead = document.querySelector('.textbox-head');
 const textBoxP = document.querySelector('.textbox-p');
 const expImage = document.querySelector('.exp img');
+const extras = document.querySelector('.extras');
 
 const projectSets = [
     [
@@ -33,16 +22,19 @@ const projectSets = [
     ["", "", ""]
 ];
 
-const textBoxHeadContent = [
-    '<a href="https://www.rebase01.tech/" class="textbox-head">REBASE</a>',
-    '<a href="https://devfest.gdgkolkata.in/" class="textbox-head">DEVFEST KOLKATA 2023</a>',
-    ' '
-];
-
-const textBoxPContent = [
-    'I designed this website as well as the branding for the hackathon as a part of the organizing team of Rebase. Took me a long long time T-T',
-    'I designed this website as a part of the organizing team of Devfest Kolkata 2023.',
-    'You can find all my other design projects on my Dribble and Behance <3 All my coding projects are available on my Github, including the repo for this website ;)'
+const textBoxContent = [
+    {
+        head: '<a href="https://www.rebase01.tech/" class="textbox-head">REBASE</a>',
+        p: 'I designed this website as well as the branding for the hackathon as a part of the organizing team of Rebase. Took me a long long time T-T'
+    },
+    {
+        head: '<a href="https://devfest.gdgkolkata.in/" class="textbox-head">DEVFEST KOLKATA 2023</a>',
+        p: 'I designed this website as a part of the organizing team of Devfest Kolkata 2023.'
+    },
+    {
+        head: ' ',
+        p: 'You can find all my other design projects on my Dribble and Behance <3 All my coding projects are available on my Github, including the repo for this website ;)'
+    }
 ];
 
 const expImageSrc = [
@@ -54,8 +46,8 @@ const expImageSrc = [
 let currentIndex = 0;
 
 function updateContent() {
-    textBoxHead.innerHTML = textBoxHeadContent[currentIndex];
-    textBoxP.innerHTML = textBoxPContent[currentIndex];
+    textBoxHead.innerHTML = textBoxContent[currentIndex].head;
+    textBoxP.innerHTML = textBoxContent[currentIndex].p;
     expImage.src = expImageSrc[currentIndex];
 
     const currentProjectSet = projectSets[currentIndex];
@@ -71,16 +63,34 @@ function updateContent() {
     projectImagesContainer3.forEach((container, index) => {
         container.querySelector('img').src = currentProjectSet[index + 2];
     });
+
+    if (currentIndex === 2) {
+        extras.style.display = 'block';
+    } else {
+        extras.style.display = 'none';
+    }
 }
 
 arrowLeft.addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + textBoxHeadContent.length) % textBoxHeadContent.length;
+    currentIndex = (currentIndex - 1 + textBoxContent.length) % textBoxContent.length;
     updateContent();
 });
 
 arrowRight.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % textBoxHeadContent.length;
+    currentIndex = (currentIndex + 1) % textBoxContent.length;
     updateContent();
+});
+
+document.querySelectorAll('.nav-link').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        window.scrollTo({
+            top: targetElement.offsetTop,
+            behavior: 'smooth'
+        });
+    });
 });
 
 updateContent();
