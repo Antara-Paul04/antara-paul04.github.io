@@ -164,8 +164,8 @@ body {
     outline: 3px black solid;
     position: absolute;
     background-color: #EDA5B0;
-    margin-top: -14%;
-    left: 32.4%;
+    margin-top: -9%;
+    left: 30.8%;
     transform: translate(-50%, -50%);
     width: 25rem;
     padding-left: 3rem;
@@ -180,12 +180,33 @@ body {
     font-family: 'tertiary-font';
     font-size: 2rem;
 }
-.sleep{
-    margin-left: 54%;
-    width: 30rem;
+.skill{
+    margin-left: 52%;
+    margin-bottom: -12%;
+    width: 35rem;
 }
-.sleep img{
+
+.skill img{
     max-width: 100%;
+}
+@keyframes shake {
+    0% { transform: translateX(-3px) rotate(-2deg); }
+    25% { transform: translateX(3px) rotate(2deg); }
+    50% { transform: translateX(-3px) rotate(-2deg); }
+    75% { transform: translateX(3px) rotate(2deg); }
+    100% { transform: translateX(-3px) rotate(-2deg); }
+}
+
+.panik {
+    position: absolute;
+    margin-left: 62.5%;
+    margin-top: -16%;
+    animation: shake 0.2s infinite;
+}
+
+.panik img {
+    max-width: 100%;
+    width: 9rem;
 }
 .skills-container {
     border-style: solid;
@@ -193,8 +214,8 @@ body {
     padding-top: 1rem;
     padding-bottom: 1rem;
     position: relative;
-    margin-top: 8%;
-    left: 28%;
+    margin-top: 14%;
+    left: 26%;
     transform: translate(-50%, -50%);
     width: 28rem;
 }
@@ -204,7 +225,7 @@ body {
     margin-bottom: 1.5rem;
 }
 .stats{
-    margin-left: 48%;
+    margin-left: 46%;
     margin-top: -36%;
 }
 .list{
