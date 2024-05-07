@@ -88,7 +88,7 @@ document.querySelectorAll('.nav-link').forEach(anchor => {
         const targetElement = document.getElementById(targetId);
         window.scrollTo({
             top: targetElement.offsetTop,
-            behavior: 'smooth'
+            behavior: 'smooth',
         });
     });
 });

@@ -10,6 +10,10 @@
     font-family: 'tertiary-font';
     src: url('assets/fonts/VT323-Regular.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'insignificant';
+    src: url('assets/fonts/PressStart2P-Regular.ttf') format('truetype');
+}
 
 body {
     margin: 0 auto;
@@ -155,48 +159,66 @@ body {
     margin-top:-48rem ;
     margin-left: 45%;
 }
-.skills-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.stats-char{
+    outline: 3px black solid;
+    position: absolute;
+    background-color: #EDA5B0;
+    margin-top: -14%;
+    left: 32.4%;
+    transform: translate(-50%, -50%);
+    width: 25rem;
+    padding-left: 3rem;
 }
-.skills-img img {
+.stats-char h1{
+    font-family: 'insignificant';
+    color: #5A0E0E;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+.stats-char h2{
+    font-family: 'tertiary-font';
+    font-size: 2rem;
+}
+.sleep{
+    margin-left: 54%;
+    width: 30rem;
+}
+.sleep img{
     max-width: 100%;
-    width: 65rem;
-    height: auto;
-    position: relative;
-    margin-top: 9rem;
-    z-index: 6;
 }
 .skills-container {
     border-style: solid;
     z-index: 4;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     position: relative;
-    margin-top: -23rem;
-    left:24%;
+    margin-top: 8%;
+    left: 28%;
     transform: translate(-50%, -50%);
-    width: 25rem;
+    width: 28rem;
 }
 
 .skills-container li {
-    font-family: 'secondary-font';
-    font-size: 1.6rem;
     list-style-type: none;
     margin-bottom: 1.5rem;
 }
-
-#container2{
-    border-style: solid;
-    z-index: 4;
-    position: relative;
-    margin-top: 1rem;
-    margin-bottom: 0;
-    transform: translate(-50%, -50%);
-    width: 25rem;
+.stats{
+    margin-left: 48%;
+    margin-top: -36%;
 }
-
+.list{
+    font-family: 'secondary-font';
+    font-size: 1.5rem;
+}
+.heading{
+    font-family: 'tertiary-font';
+    color:#5A0E0E;
+    font-size: 2.4rem;
+}
+.space{
+    height: 4rem;
+}
 
 
 .text {
@@ -283,15 +305,13 @@ body {
 }
 
 .arrow {
-    margin-top: 47%;
+    margin-top: 20%;
+    margin-left: -2%;
     width: calc(90% - 60px);
     position: absolute;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    top: 50%;
-    left: 8%;
-    transform: translateY(-50%);
     overflow-x: hidden;
     align-items: center;
 }
@@ -339,6 +359,13 @@ body {
     animation: rotate 1s infinite;
 }
 
+/* .btn-link {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    z-index: 100;
+}
 .dribbble-img{
     position: absolute;
     margin-top: 13%;
@@ -397,7 +424,7 @@ body {
     transform: translate(-50%, -50%);
     text-align: center;
     white-space: nowrap;
-}
+} */
 
 .footer {
     background-color: #EDA5B0;
