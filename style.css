@@ -154,10 +154,14 @@ body {
     width: 35rem;
     line-height: 2.2rem;
 }
-.about-img{
-    position:absolute;
-    margin-top:-48rem ;
+.sleep{
+    position: absolute;
     margin-left: 45%;
+    margin-top: 10%;
+}
+.sleep img{
+    max-width: 100%;
+    width: 30rem;
 }
 
 .stats-char{
