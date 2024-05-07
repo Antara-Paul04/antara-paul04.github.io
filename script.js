@@ -33,9 +33,10 @@ const textBoxContent = [
     },
     {
         head: ' ',
-        p: 'You can find all my other design projects on my Dribble and Behance <3 All my coding projects are available on my Github, including the repo for this website ;)'
+        p: 'You can find all my other design projects on my Dribble and Behance <3 All my coding projects are available on my Github, including the <a href="https://github.com/Antara-Paul04/portfolio">repo for this website</a> ;)'
     }
 ];
+
 
 const expImageSrc = [
     'assets/images/exp2.png',

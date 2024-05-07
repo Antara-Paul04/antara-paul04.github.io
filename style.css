@@ -146,7 +146,7 @@ body {
     z-index: 10;
 }
 .about-text{
-    padding-top: 10rem;
+    padding-top: 11rem;
     padding-bottom: 10rem;
     font-family: 'secondary-font';
     font-size: 1.5rem;
@@ -485,6 +485,9 @@ body {
 
 .link, .mail, .x, .linkedin, .github, .discord{
     max-width: 3rem;
+}
+.dribbble, .behance{
+    max-width: 2.4rem;
 }
 .socials li a, .gmail li a {
     width:100%;
